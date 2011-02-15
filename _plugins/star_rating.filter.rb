@@ -51,7 +51,7 @@ module Jekyll
 			halfStar = (rating - wholeStars == 0.5 ? 1 : 0)
 			clearStars = 5 - (wholeStars + halfStar)
 
-			ratingAltText = "#{rating}/5.0"
+			ratingAltText = "%.1f/5.0" % [rating]
 
 			htmlOutput = String.new
 			wholeStars.times do
