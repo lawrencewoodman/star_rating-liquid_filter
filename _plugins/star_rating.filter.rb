@@ -69,7 +69,7 @@ module Jekyll
 				ratingAltText = ""
 			end
 
-			return %Q{#{htmlOutput}}
+			return htmlOutput
 		end
 	end
 end
