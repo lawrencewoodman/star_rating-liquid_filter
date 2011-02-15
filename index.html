@@ -1,7 +1,13 @@
 ---
 layout: nil
+rating0: 0
+rating04: 0.4
+rating05: 0.5
+rating06: 0.6
 rating1: 1
+rating14: 1.4
 rating15: 1.5
+rating16: 1.6
 rating2: 2
 rating25: 2.5
 rating45: 4.5
@@ -29,10 +35,28 @@ Below are examples of how the stars should appear.
 <table>
 	<tr><th>Star Images</th><th>Rating</th><th>How this should look</th></tr>
 	<tr>
+		<td>{{ page.rating0|star_rating }}</td><td><strong>{{page.rating0}}</strong></td><td>No yellow stars, five clear stars.</td>
+	</tr>
+	<tr>
+		<td>{{ page.rating04|star_rating }}</td><td><strong>{{page.rating04}}</strong></td><td>No yellow stars, five clear stars.</td>
+	</tr>
+	<tr>
+		<td>{{ page.rating05|star_rating }}</td><td><strong>{{page.rating05}}</strong></td><td>Half a yellow star, four clear stars.</td>
+	</tr>
+	<tr>
+		<td>{{ page.rating06|star_rating }}</td><td><strong>{{page.rating06}}</strong></td><td>One yellow star, four clear stars.</td>
+	</tr>
+	<tr>
 		<td>{{ page.rating1|star_rating }}</td><td><strong>{{page.rating1}}</strong></td><td>One yellow star, four clear stars.</td>
 	</tr>
 	<tr>
+		<td>{{ page.rating14|star_rating }}</td><td><strong>{{page.rating14}}</strong></td><td>One yellow star, four clear stars.</td>
+	</tr>
+	<tr>
 		<td>{{ page.rating15|star_rating }}</td><td><strong>{{page.rating15}}</strong></td><td>One and a half yellow stars, three clear stars.</td>
+	</tr>
+	<tr>
+		<td>{{ page.rating16|star_rating }}</td><td><strong>{{page.rating16}}</strong></td><td>Two yellow stars, three clear stars.</td>
 	</tr>
 	<tr>
 		<td>{{ page.rating2|star_rating }}</td><td><strong>{{page.rating2}}</strong></td><td>Two yellow stars, three clear stars.</td>

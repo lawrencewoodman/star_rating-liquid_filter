@@ -45,20 +45,28 @@ module Jekyll
 		def star_rating(rating)
 
 			wholeStars = rating.floor
+			if (rating - wholeStars > 0.5)
+				wholeStars += 1
+			end
 			halfStar = (rating - wholeStars == 0.5 ? 1 : 0)
 			clearStars = 5 - (wholeStars + halfStar)
 
-			htmlOutput = Star_imageTag % ["star_filled.png", "#{rating}/5.0"]
-			(wholeStars-1).times do
-				htmlOutput += Star_imageTag % ["star_filled.png", ""]
+			ratingAltText = "#{rating}/5.0"
+
+			htmlOutput = String.new
+			wholeStars.times do
+				htmlOutput += Star_imageTag % ["star_filled.png", "#{ratingAltText}"]
+				ratingAltText = ""
 			end
 
 			if (halfStar == 1)
-				htmlOutput += Star_imageTag % ["star_half.png", ""]
+				htmlOutput += Star_imageTag % ["star_half.png", "#{ratingAltText}"]
+				ratingAltText = ""
 			end
 
 			clearStars.times do
-				htmlOutput += Star_imageTag % ["star_clear.png", ""]
+				htmlOutput += Star_imageTag % ["star_clear.png", "#{ratingAltText}"]
+				ratingAltText = ""
 			end
 
 			return %Q{#{htmlOutput}}
