@@ -10,7 +10,7 @@ Installation
 
 Configuration
 -------------
-If you want to put the images in an alternative directory then you will need to alter `STAR_IMAGES_LOC` in `star_rating.filter.rb` to point to the correct location.
+If you want to put the images in an alternative directory then you will need to alter `Star_imagesLoc` in `star_rating.filter.rb` to point to the correct location.
 
 How to use it
 -------------

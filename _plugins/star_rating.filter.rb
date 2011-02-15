@@ -36,7 +36,7 @@ module Jekyll
 	module Filters
 
 		# Location of the star images from root of website
-		STAR_IMAGES_LOC = "/images"
+		Star_imagesLoc = "/images"
 
 		# Displays the rating as a series of stars
 		def star_rating(rating)
@@ -45,17 +45,17 @@ module Jekyll
 			halfStar = (rating - wholeStars == 0.5 ? 1 : 0)
 			clearStars = 5 - (wholeStars + halfStar)
 
-			htmlOutput = "<img src=\"#{STAR_IMAGES_LOC}/star_filled.png\" alt=\"#{rating}/5.0\" \>"
+			htmlOutput = "<img src=\"#{Star_imagesLoc}/star_filled.png\" alt=\"#{rating}/5.0\" \>"
 			(wholeStars-1).times do
-				htmlOutput += "<img src=\"#{STAR_IMAGES_LOC}/star_filled.png\" alt=\"\" \>"
+				htmlOutput += "<img src=\"#{Star_imagesLoc}/star_filled.png\" alt=\"\" \>"
 			end
 
 			if (halfStar == 1)
-				htmlOutput += "<img src=\"#{STAR_IMAGES_LOC}/star_half.png\" alt=\"\" \>"
+				htmlOutput += "<img src=\"#{Star_imagesLoc}/star_half.png\" alt=\"\" \>"
 			end
 
 			clearStars.times do
-				htmlOutput += "<img src=\"#{STAR_IMAGES_LOC}/star_clear.png\" alt=\"\" \>"
+				htmlOutput += "<img src=\"#{Star_imagesLoc}/star_clear.png\" alt=\"\" \>"
 			end
 
 			return %Q{#{htmlOutput}}
