@@ -25,7 +25,7 @@ To see this working run `jekyll --server` in the root directory of this reposito
 License
 -------
 Copyright (c) 2011, Lawrence Woodman  
-This software is licensed under a 2 clause BSD license.  Please see the file, LICENSE.md, for details.
+This software is licensed under an MIT License.  Please see the file, LICENSE.md, for details.
 
 The images are alterations from originals at [stackoverflow](http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css) and are licensed under 
 the [Creative Commons Attribution-ShareAlike 2.5 Generic License](http://creativecommons.org/licenses/by-sa/2.5/).
