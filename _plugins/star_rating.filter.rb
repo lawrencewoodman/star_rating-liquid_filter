@@ -39,7 +39,7 @@ module Jekyll
 		Star_imagesLoc = "/images"
 
 		# The format of the img tag used by % method
-		Star_imageTag = "<img src=\"#{Star_imagesLoc}/%s\" alt=\"%s\" \>"
+		Star_imageTag = "<img src=\"#{Star_imagesLoc}/%s\" alt=\"%s\" />"
 
 		# Displays the rating as a series of stars
 		def star_rating(rating)
