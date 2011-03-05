@@ -3,7 +3,7 @@ License
 
 star_rating
 -----------
-Jekyll filter plugin to display a rating as a series of star images.
+A Liquid Filter to display a rating as a series of star images.
 This is licensed under the following MIT License.
 
 Copyright (c) 2011 Lawrence Woodman
