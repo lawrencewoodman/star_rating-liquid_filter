@@ -1,7 +1,7 @@
 star_rating
 ===========
 
-This is a filter plugin for [Jekyll](http://jekyllrb.com/) that will display a rating as a series of nought to five star images.
+This is a [Liquid](http://www.liquidmarkup.org/) Filter that will display a rating as a series of nought to five star images.  It was originally developed for use with [Jekyll](http://jekyllrb.com/) and therefore the following instructions relate to that.
 
 Installation
 ------------
