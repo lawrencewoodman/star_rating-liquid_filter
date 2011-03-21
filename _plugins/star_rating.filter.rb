@@ -10,9 +10,8 @@ module StarRatingFilter
 	def star_rating(rating)
 
 		wholeStars = rating.floor
-		if (rating - wholeStars > 0.5)
-			wholeStars += 1
-		end
+		wholeStars += 1 if (rating - wholeStars > 0.5)
+
 		halfStar = (rating - wholeStars == 0.5 ? 1 : 0)
 		clearStars = 5 - (wholeStars + halfStar)
 
